@@ -136,6 +136,9 @@ q {
 }
 
 .ArticleContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 18px;
   line-height: 30px;
 }
@@ -158,6 +161,56 @@ q {
 .Content {
   max-width: 615px;
   width: 100%;
+}
+
+.ContentHero {
+  width: 85%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.ContentHero__subtitle {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  color: #666;
+}
+
+.ContentHero__grid {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 15px;
+}
+
+.ContentHero__grid-item {
+  margin-bottom: 30px;
+  font-size: 0.75em;
+  line-height: 1.4em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 300;
+}
+
+.ContentHero__grid-item-title {
+  font-weight: 700;
+  margin-top: 10px;
+  margin-right: 8px;
+  text-transform: uppercase;
+}
+
+.ContentHero__divider-authors {
+  height: 1px;
+  width: 65px;
+  background-color: black;
+  margin-bottom: 20px;
+}
+
+.ContentHero__authors {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .fontStyles {
