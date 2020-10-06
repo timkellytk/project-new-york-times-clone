@@ -27,16 +27,47 @@
   </head>
   <body>
     <header>
-      <nav class="Nav">
+      <nav class="Nav Nav--primary">
         <div class="Nav__third">
           <img class="Nav__icon" src="assets/hamburger-menu.svg" alt="menu" />
           <img class="Nav__icon" src="assets/search.svg" alt="search" />
           <a class="Nav__category">Space & Cosmos</a>
         </div>
-        <img src="./assets/nyt-logo.svg" />
-        <div class="Nav__third">
+        <div class="Nav__third Nav__third--middle">
+          <img src="./assets/nyt-logo.svg" />
+        </div>
+        <div class="Nav__third Nav__third--end">
           <button class="Nav__button">Subscribe Now</button>
           <button class="Nav__button">Login</button>
+        </div>
+      </nav>
+      <nav class="Nav Nav--article Nav--hidden">
+        <div class="Nav__third">
+          <img src="./assets/nyt-logo.svg" height="20px" />
+        </div>
+        <div class="Nav__third Nav__third--middle">
+          <a class="Nav__category">Space & Cosmos</a>
+          <div class="Nav__category-divider"></div>
+          <p class="Nav__article-title">
+            Space Ripples Reveal Big Bang’s Smoking Gun 615
+          </p>
+        </div>
+        <div class="Nav__third Nav__third--end">
+          <div class="ArticleInfo__icon-container">
+            <div class="ArticleInfo__icon">
+              <img src="assets/facebook.svg" />
+            </div>
+            <div class="ArticleInfo__icon">
+              <img src="assets/twitter.svg" />
+            </div>
+            <div class="ArticleInfo__icon">
+              <img src="assets/email.svg" />
+            </div>
+            <div class="ArticleInfo__icon">
+              <img src="assets/share.svg" />
+            </div>
+            <img class="ArticleInfo__bookmark-icon" src="assets/bookmark.svg" />
+          </div>
         </div>
       </nav>
     </header>
@@ -591,5 +622,26 @@
         </div>
       </div>
     </article>
+    <script>
+      const articleInfo = document.querySelector('.ArticleInfo');
+      const navPrimary = document.querySelector('.Nav--primary');
+      const navArticle = document.querySelector('.Nav--article');
+
+      const scrolledToArticle = () =>
+        window.scrollY > articleInfo.offsetTop - articleInfo.offsetHeight;
+      const showArticleNav = () => {
+        navPrimary.classList.add('Nav--hidden');
+        navArticle.classList.remove('Nav--hidden');
+      };
+      const hideArticleNav = () => {
+        navArticle.classList.add('Nav--hidden');
+        navPrimary.classList.remove('Nav--hidden');
+      };
+      const checkArticleNav = () => {
+        scrolledToArticle() ? showArticleNav() : hideArticleNav();
+      };
+
+      window.addEventListener('scroll', checkArticleNav);
+    </script>
   </body>
 </html>

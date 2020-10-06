@@ -20,17 +20,33 @@ q {
 .Nav {
   position: fixed;
   width: 100%;
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
   padding: 5px 20px 5px 20px;
   border-bottom: lightgrey 1px solid;
   background-color: white;
 }
 
+.Nav--article {
+  grid-template-columns: 1fr 1.5fr 1fr;
+}
+
+.Nav--hidden {
+  display: none;
+}
+
 .Nav__third {
   display: flex;
   align-items: center;
+}
+
+.Nav__third--middle {
+  justify-self: center;
+}
+
+.Nav__third--end {
+  justify-self: end;
 }
 
 .Nav__icon {
@@ -44,6 +60,19 @@ q {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
+}
+
+.Nav__category-divider {
+  width: 1px;
+  height: 15px;
+  background-color: lightgrey;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.Nav__article-title {
+  font-size: 13px;
+  color: #333;
 }
 
 .Nav__button {
