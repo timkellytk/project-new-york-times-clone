@@ -1,5 +1,163 @@
-html {
-  background-color: beige;
+body {
+  font-family: 'Merriweather', serif;
+}
+
+a {
+  color: #326891;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+q {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.Nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px 5px 20px;
+  border-bottom: lightgrey 1px solid;
+  background-color: white;
+}
+
+.Nav__third {
+  display: flex;
+  align-items: center;
+}
+
+.Nav__icon {
+  margin-right: 25px;
+}
+
+.Nav__category {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14.25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.Nav__button {
+  margin-left: 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  transition: all 0.6s ease 0s;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: rgb(86, 123, 149);
+  border: 1px solid rgb(50, 104, 145);
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 11px 12px 8px;
+  text-transform: uppercase;
+}
+
+.Article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 7.5% 40px 7.5%;
+}
+
+.Article__heading {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+  font-size: 2.2em;
+  line-height: 1.3em;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.ArticleInfo {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.ArticleInfo__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ArticleInfo__author {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ArticleInfo__author--link {
+  color: black;
+  text-decoration-color: lightgrey;
+}
+
+.ArticleInfo__icon-container {
+  display: flex;
+}
+
+.ArticleInfo__icon {
+  background-color: #eee;
+  border: 1px #eee solid;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.ArticleInfo__bookmark-icon {
+  margin-left: 15px;
+}
+
+.ArticleInfo__time {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.ArticleContent {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.Image__caption {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+  margin-right: 7px;
+  color: #666;
+  max-width: 70%;
+}
+
+.Image__credit {
+  margin-left: 5px;
+  font-size: 0.75rem;
+  color: rgb(145, 145, 145);
+}
+
+.Content {
+  max-width: 615px;
+  width: 100%;
 }
 
 .fontStyles {
@@ -9,7 +167,8 @@ html {
 }
 
 /* 
+Font Styles
 https://fonts.google.com/specimen/Merriweather?category=Serif&preview.text=So%20the%20future%20of%20the%20cosmos%20is%20perhaps%20bright%20and%20fecund&preview.text_type=custom&sort=popularity&preview.size=15&sidebar.open=true&selection.family=Merriweather:wght@300;400;700
-https://fonts.google.com/specimen/Source+Serif+Pro?category=Serif&stylecount=12&preview.text=Space%20Ripples%20Reveal%20Big%20Bang%E2%80%99s%20Smoking%20Gun&preview.text_type=custom&sidebar.open=true&selection.family=Source+Serif+Pro:ital,wght@0,400;1,900
+https://fonts.google.com/specimen/Source+Serif+Pro?category=Serif&stylecount=12&preview.text=Space%20Ripples%20Reveal%20Big%20Bang%E2%80%99s%20Smoking%20Gun&preview.text_type=custom&sidebar.open=true&selection.family=Source+Serif+Pro:ital,wght@0,400;1,700
 https://fonts.google.com/specimen/Source+Sans+Pro?stylecount=12&query=sans&preview.text=More%20in%20Space%20and%20Astronomy&preview.text_type=custom&selection.family=Source+Sans+Pro:wght@900&sidebar.open=true
 */
