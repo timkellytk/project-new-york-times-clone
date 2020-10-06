@@ -1,0 +1,15 @@
+html {
+  background-color: beige;
+}
+
+.fontStyles {
+  font-family: 'Merriweather', serif;
+  font-family: 'Source Serif Pro', serif;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* 
+https://fonts.google.com/specimen/Merriweather?category=Serif&preview.text=So%20the%20future%20of%20the%20cosmos%20is%20perhaps%20bright%20and%20fecund&preview.text_type=custom&sort=popularity&preview.size=15&sidebar.open=true&selection.family=Merriweather:wght@300;400;700
+https://fonts.google.com/specimen/Source+Serif+Pro?category=Serif&stylecount=12&preview.text=Space%20Ripples%20Reveal%20Big%20Bang%E2%80%99s%20Smoking%20Gun&preview.text_type=custom&sidebar.open=true&selection.family=Source+Serif+Pro:ital,wght@0,400;1,900
+https://fonts.google.com/specimen/Source+Sans+Pro?stylecount=12&query=sans&preview.text=More%20in%20Space%20and%20Astronomy&preview.text_type=custom&selection.family=Source+Sans+Pro:wght@900&sidebar.open=true
+*/
