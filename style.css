@@ -17,6 +17,11 @@ q {
   line-height: 30px;
 }
 
+.Wrapper {
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+}
+
 .Nav {
   position: fixed;
   width: 100%;
@@ -170,6 +175,41 @@ q {
   align-items: center;
   font-size: 18px;
   line-height: 30px;
+}
+
+.ArticleContent__attribution {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgb(102, 102, 102);
+}
+
+.ArticleContent__attribution-link {
+  color: rgb(102, 102, 102);
+}
+
+.ArticleContent__comments {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.ArticleContent__comment-button {
+  background-color: rgb(86, 123, 149);
+  border: 1px solid rgb(50, 104, 145);
+  border-radius: 3px;
+  color: white;
+  display: block;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.5rem;
+  padding: 5px 0px;
+  text-transform: uppercase;
+  width: 60%;
+  cursor: pointer;
+  transition: background-color 0.6s ease 0s;
 }
 
 .Image__caption {
