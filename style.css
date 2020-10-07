@@ -363,6 +363,10 @@ q {
   text-decoration: none;
 }
 
+.Footer {
+  padding-top: 30px;
+}
+
 .Footer__divider-thick {
   background-color: lightgray;
   height: 2px;
@@ -379,6 +383,11 @@ q {
 .Footer__divider-thin--inside-footer {
   margin-top: 8px;
   margin-bottom: 8px;
+}
+
+.Footer__divider-thin--copyright {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .Footer__logo-container {
@@ -402,6 +411,7 @@ q {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .Footer__grid-title {
@@ -476,6 +486,17 @@ q {
 .Footer__subscribe-link-small:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.Footer__copyright {
+  color: #666;
+  display: flex;
+  justify-content: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  padding: 15px;
 }
 
 .fontStyles {
