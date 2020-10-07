@@ -376,6 +376,11 @@ q {
   width: 100%;
 }
 
+.Footer__divider-thin--inside-footer {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 .Footer__logo-container {
   display: flex;
   align-items: flex-end;
@@ -400,14 +405,20 @@ q {
 }
 
 .Footer__grid-title {
-  color: black;
+  color: rgb(51, 51, 51);
   font-size: 13px;
   font-weight: 700;
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   height: 25px;
   line-height: 15px;
   margin: 0px;
   text-transform: uppercase;
+}
+
+.Footer__grid-item--subscribe {
+  border-left: 1px solid lightgrey;
+  margin-left: -15px;
+  padding-left: 15px;
 }
 
 .Footer__grid-item a {
@@ -424,6 +435,47 @@ q {
 
 .Footer__grid-item a:hover {
   text-decoration: underline;
+}
+
+.Footer__subscribe-flex {
+  display: flex;
+  align-items: center;
+}
+
+.Footer__subscribe-link {
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 150px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Footer__subscribe-link:hover {
+  text-decoration: underline;
+}
+
+.Footer__subscribe-link-small {
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 150px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+}
+
+.Footer__subscribe-link-small:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .fontStyles {
